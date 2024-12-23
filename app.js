@@ -2,7 +2,6 @@ const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode');
 const axios = require('axios');
 const path = require('path');
-
 // Inicializar cliente de WhatsApp
 const client = new Client();
 
@@ -44,6 +43,5 @@ client.on('message', async (message) => {
         message.reply('Hubo un error al procesar tu mensaje. Inténtalo nuevamente más tarde.');
     }
 });
-
 // Inicializar cliente de WhatsApp
 client.initialize();
